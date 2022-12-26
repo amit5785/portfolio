@@ -1,0 +1,7 @@
+.shapeContainer{
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 4px;
+}

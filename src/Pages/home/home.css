@@ -1,0 +1,137 @@
+.homeContainer{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  justify-content: center;
+  justify-items: center;
+}
+
+.homeText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items:center;
+}
+
+.homeText p{
+  margin-left: 20vw;
+  margin-top: 4vh;
+  font-size: 2.2rem;
+  font-weight:800;
+}
+
+.homeText h1{
+  font-size: 1.8rem;
+  font-weight:600;
+}
+
+.homeText span{
+  color: wheat;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+
+.homeImage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items:center;
+  height: 100%;
+  width: 100%;
+}
+
+.homeImage img{
+  height: 100%;
+  width: 100%;
+}
+
+/* @media screen and (max-width: 948px){
+  .homeText p{
+    margin-top: 2vh;
+    margin-left: 10vw;
+    font-size: 1.7rem;
+    font-weight:bold;
+  }
+
+  .homeText h1{
+    font-size: 1.4rem;
+    font-weight:600;
+  }
+
+  .homeText span{
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+} */
+
+@media screen and (max-width: 768px){
+ .homeContainer{
+  grid-template-columns: 100%;
+  align-items: center;
+ }
+
+ .homeImage{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: -20;
+  opacity: 0.8;
+ }
+
+ .homeImage img{
+  width: 60vw;
+  max-width: 400px;
+  min-width: 280px;
+ }
+
+ .homeText{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: -10;
+
+  justify-content:flex-end;
+  /* margin-bottom: 8vw; */
+
+  color: white;
+  height: 75vh;
+ }
+
+ .homeText p{
+  margin-top: 1vw;
+  margin-left: 10vw;
+  font-size: 1.3rem;
+  font-weight:700;
+}
+
+.homeText h1{
+  font-size: 1rem;
+  font-weight:700;
+}
+
+ .homeText span{
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(239, 181, 74);
+ }
+}
+
+
+/* @media screen and (max-width: 348px){
+  
+  .homeText p{
+    font-size: 1.4rem;
+    font-weight:600;
+  }
+
+  .homeText h1{
+    font-size: 1.2rem;
+    font-weight:500;
+  }
+
+  .homeText span{
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+ } */

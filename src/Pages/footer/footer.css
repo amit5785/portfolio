@@ -1,0 +1,133 @@
+.footerContainer{
+  background-color: rgb(37, 38, 38);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70vh;
+  border-top-left-radius:2vw;
+  border-top-right-radius:1vw;
+  margin-top: -2vw;
+}
+
+.footerlinkcontainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.footerlinks{
+  height: 90%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footerlinks p{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  height: 5vh;
+}
+
+.footerContainer a{
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.footerlinks h3{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.icon{
+  height: 3vh;
+  width: 7vw;
+  margin: 0vw 2px;
+}
+
+
+.myresume{
+  height: 45px;
+  width: 145px;
+  border: 2px solid rgb(177, 231, 84);
+  border-radius: 5vw;
+  background-color:rgb(32, 35, 35);
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  margin-left: 3vw;
+}
+
+.myresume a{
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: beige;
+}
+
+.myresume:hover{
+  color: aqua;
+  font-size:1rem;
+  font-weight: 600;
+  background-color:rgb(19, 19, 19);
+  box-shadow: 1px 1px 1px rgb(130, 237, 116);
+}
+
+.footersvg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+
+  /* height:60vh;
+  width: 30vw; */
+}
+
+.footerContainer p{
+  text-align: justify;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 2vh 1vh;
+}
+
+.copyrightsection{
+  align-self: center;
+}
+
+
+@media screen and (max-width:768px){
+  .footerlinks h3{
+    margin-top: 2vh;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .icon{
+    margin: 0vw 5px;
+  }
+
+  .footersvg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vh;
+
+    height: 30vh;
+    width: 50vw;
+  }
+
+}
+
