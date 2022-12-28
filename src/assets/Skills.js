@@ -8,7 +8,7 @@ const Skills=[
     contents:["HTML","CSS","React.js","DBMS","Firebase","Firebase-Authentication","AWS-Cognito"]
   },
   {
-    title:"Ohters",
+    title:"Others",
     contents:["Overleaf","Git","SQL"]
   }
 ]

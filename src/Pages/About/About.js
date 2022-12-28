@@ -22,7 +22,7 @@ const About = () => {
         <div className='aboutText'>
           <h1>About Me</h1>
           <p>
-            My name is Amit Kumar Singh and belong to Bihar, India. I am currently Pursuing B.Tech in Electrical Engineering Dept. at National Institute of Technology Patna. I love coding. I am passionate about learning new things, meeting new people and exploring new experiences. I am enthusiastic about every new problem I come across. Always up for creating positive environment. I am always open to learning new technologies and new skills. Fexible and willing to work in growth oriented environment.
+            My name is Amit Kumar Singh, and I belong to Bihar, India. I am currently pursuing a B.Tech. in electrical engineering at the National Institute of Technology, Patna. I enjoy coding. I love discovering new things, getting to know new people, and having new experiences. Each new issue that I encounter makes me excited. always eager to foster a happy atmosphere. I'm always interested in picking up new knowledge and abilities. flexible and prepared to work in a setting that promotes progress.
           </p>
         </div>
 
