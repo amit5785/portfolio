@@ -1,16 +1,19 @@
 import React from 'react'
 import './home.css'
+import { useDataContext } from '../../context/datacotext'
 
 const Home = () => {
+  const { homeData } = useDataContext()
+  
   return (
     <div id='home'>
       <div className='homeContainer'>
         <div className="homeText">
-                <h1>Hi, My Name is <br /><span>Amit</span> Kumar Singh</h1>
-                <p>Web Developer</p>
+                <h1>{homeData.introLine} <br /><span>{homeData.firstName}</span> {homeData.middleName} {homeData.lastName}</h1>
+                <p>{homeData.jobTitle}</p>
         </div>
         <div className='homeImage'>
-          <img src="https://docs.google.com/uc?id=1eN6Jaw9DiY4q0e0-f21ZH-iC90-_frVk" alt='Error in loading...'/>
+          <img src={`${homeData.imgURL}`} alt='Loading...'/>
         </div>
       </div>
     </div>

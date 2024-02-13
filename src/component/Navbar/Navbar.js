@@ -37,7 +37,7 @@ const Navbar= ()=>
                     </li>
                     <li style={open?{animation:'navLinkFade 0.3s ease forwards 0.4s '}:{}}>
                     <Link style={{textDecoration: 'none', color: 'white'}} to='#myContact' smooth>Contact</Link>
-                    {/* Contact */}
+                        {/* Contact */}
                     </li>
                 </ul> 
 
