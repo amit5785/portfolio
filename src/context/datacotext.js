@@ -1,7 +1,9 @@
 import { createContext, useContext, useEffect, useState} from "react";
-import { database } from "../firebase";
+import { database} from "../firebase";
+// import { storage} from "../firebase";
 import {ref, onValue } from "firebase/database";
-
+// import { ref as storageRef, getDownloadURL } from "firebase/storage";
+// import axios from 'axios'
 export const dataContext = createContext({
   aboutData : {},
   educations : {},
@@ -38,14 +40,46 @@ export function DataContextProvider({ children }) {
           setterFun(data)
         }
         // console.log(data);
+
+        // if(node === 'homeData')
+        // {
+        //   console.log(data);
+        //   fetchContent(data, setterFun)
+        // }
     })
   };
+
+  // const fetchContent = (nodeVal, setterFun)=>{
+  //   // const url = nodeVal.svgImageURL
+  //   // fetch(url).then((response)=>{
+  //   //   return response.text()
+  //   // }).then((textContent)=>{
+  //   //   setterFun({"svgContent" : textContent, ...nodeVal})
+  //   // }).catch((error)=>{
+  //   //   console.error("Error fetching SVG content:", error)
+  //   // })
+
+  //   // const url = nodeVal.svgImageURL;
+  
+  //   // axios.get(url)
+  //   // .then((response) => {
+  //   //   return response.data;
+  //   // })
+  //   // .then((textContent) => {
+  //   //   setterFun({ "svgContent": textContent, ...nodeVal });
+  //   // })
+  //   // .catch((error) => {
+  //   //   console.error("Error fetching SVG content:", error);
+  //   // });
+  // };
 
   let stateList = ['aboutData' , 'educations', 'experiences', 'homeData', 'projects', 'skills', 'resumeURL', 'footer'];
   let setterList = [setAboutData, setEducations, setExperiences, setHomeData, setProjects, setSkills, setResumeURL, setFooter]
   for (let i = 0; i < stateList.length; i++) {
     fetchData(stateList[i], setterList[i]);
   }
+  // console.log("After all states are updated :", homeData)
+  // fetchContent('homeData', setHomeData);
 
   }, [setAboutData, setEducations, setExperiences, setHomeData, setProjects, setSkills, setResumeURL, setFooter])
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'
 import { useDataContext } from '../../context/datacotext'
+// import LandingPage from '../../assets/LandingPage'
 
 const Home = () => {
   const { homeData } = useDataContext()
@@ -14,6 +15,7 @@ const Home = () => {
         </div>
         <div className='homeImage'>
           <img src={`${homeData.imgURL}`} alt='Loading...'/>
+          {/* <LandingPage /> */}
         </div>
       </div>
     </div>
